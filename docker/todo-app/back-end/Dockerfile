@@ -1,6 +1,6 @@
 FROM node:14-alpine 
-WORKDIR /app/back-end
-ADD node_modules.tar.gz /app/back-end
+WORKDIR /usr/app
+ADD node_modules.tar.gz ./
 COPY . .
 EXPOSE 3001
 CMD ["npm", "start"]
